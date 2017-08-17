@@ -17,7 +17,7 @@
     <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="Slavin_glas_UWP.App">
       <uap:VisualElements DisplayName="Slavin glas UWP" Square150x150Logo="SlavinGlas.Core\Assets\Square150x150Logo.png" Square44x44Logo="SlavinGlas.Core\Assets\Square44x44Logo.png" Description="Slavin glas UWP" BackgroundColor="transparent">
         <uap:LockScreen Notification="badge" BadgeLogo="SlavinGlas.Core\Assets\BadgeLogo.png" />
-        <uap:DefaultTile Wide310x150Logo="SlavinGlas.Core\Assets\Wide310x150Logo.png" Square310x310Logo="SlavinGlas.Core\Assets\LargeTile.png" Square71x71Logo="SlavinGlas.Core\Assets\SmallTile.png">
+        <uap:DefaultTile Wide310x150Logo="SlavinGlas.Core\Assets\Wide310x150Logo.png" Square71x71Logo="SlavinGlas.Core\Assets\SmallTile.png">
         </uap:DefaultTile>
         <uap:SplashScreen Image="SlavinGlas.Core\Assets\SplashScreen.png" />
       </uap:VisualElements>
