@@ -26,7 +26,14 @@ namespace Slavin_glas_UWP.SlavinGlas.Views.BaseMedia
         public RadioPage()
         {
             this.InitializeComponent();
-            
+
+
+
+            Windows.UI.Xaml.Media.AcrylicBrush Brush = new Windows.UI.Xaml.Media.AcrylicBrush();
+            Brush.BackgroundSource = Windows.UI.Xaml.Media.AcrylicBackgroundSource.Backdrop;
+            Brush.TintOpacity = 0.4;
+
+            backGrid.Background = Brush;
             Rev.Begin();
         }
 
@@ -35,10 +42,12 @@ namespace Slavin_glas_UWP.SlavinGlas.Views.BaseMedia
             if(live.CurrentState == MediaElementState.Playing)
             {
                 live.Pause();
+                state.Icon = new SymbolIcon(Symbol.Pause);
             }
             else
             {
                 live.Play();
+                state.Icon = new SymbolIcon(Symbol.Play);
             }
         }
     }

@@ -11,11 +11,10 @@
             <DoubleAnimation Duration="0:0:1" To="1" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="image" d:IsOptimized="True"/>
         </Storyboard>
     </Page.Resources>
-    
-        <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <MediaElement x:Name="live" Source="http://31.147.208.100:8000/streama"/>
         <Image x:Name="image" Source="ms-appx:///SlavinGlas.Core/Assets/Orginal/Orginal.jpg" Opacity="0" Stretch="Fill"/>
-        <Grid Background="{ThemeResource SystemControlAcrylicElementBrush}">
+        <Grid x:Name="backGrid">
             <Ellipse Width="250" Height="250" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,40,0,5">
                 <Ellipse.Fill>
                     <ImageBrush Stretch="Fill" ImageSource="ms-appx:///SlavinGlas.Core/Assets/Orginal/Orginal.jpg"/>
