@@ -1,0 +1,27 @@
+﻿<Page
+    x:Class="Slavin_glas_UWP.SlavinGlas.Views.BaseMedia.RadioPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Slavin_glas_UWP.SlavinGlas.Views.BaseMedia"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <Page.Resources>
+        <Storyboard x:Name="Rev">
+            <DoubleAnimation Duration="0:0:1" To="1" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="image" d:IsOptimized="True"/>
+        </Storyboard>
+    </Page.Resources>
+    
+        <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <MediaElement x:Name="live" Source="http://31.147.208.100:8000/streama"/>
+        <Image x:Name="image" Source="ms-appx:///SlavinGlas.Core/Assets/Orginal/Orginal.jpg" Opacity="0" Stretch="Fill"/>
+        <Grid Background="{ThemeResource SystemControlAcrylicElementBrush}">
+            <Ellipse Width="250" Height="250" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,40,0,5">
+                <Ellipse.Fill>
+                    <ImageBrush Stretch="Fill" ImageSource="ms-appx:///SlavinGlas.Core/Assets/Orginal/Orginal.jpg"/>
+                </Ellipse.Fill>
+            </Ellipse>
+            <AppBarButton x:Name="state" Icon="Play" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,0,0,30" Click="state_Click"/>
+        </Grid>
+    </Grid>
+</Page>

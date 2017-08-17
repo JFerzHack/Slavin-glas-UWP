@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" IgnorableNamespaces="uap mp">
+  <Identity Name="86cb282d-1918-4200-980b-29e8aba92224" Publisher="CN=jakov" Version="1.0.0.0" />
+  <mp:PhoneIdentity PhoneProductId="86cb282d-1918-4200-980b-29e8aba92224" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
+  <Properties>
+    <DisplayName>Slavin glas UWP</DisplayName>
+    <PublisherDisplayName>jakov</PublisherDisplayName>
+    <Logo>SlavinGlas.Core\Assets\StoreLogo.png</Logo>
+  </Properties>
+  <Dependencies>
+    <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.0.0" MaxVersionTested="10.0.0.0" />
+  </Dependencies>
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+  <Applications>
+    <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="Slavin_glas_UWP.App">
+      <uap:VisualElements DisplayName="Slavin glas UWP" Square150x150Logo="SlavinGlas.Core\Assets\Square150x150Logo.png" Square44x44Logo="SlavinGlas.Core\Assets\Square44x44Logo.png" Description="Slavin glas UWP" BackgroundColor="transparent">
+        <uap:LockScreen Notification="badge" BadgeLogo="SlavinGlas.Core\Assets\BadgeLogo.png" />
+        <uap:DefaultTile Wide310x150Logo="SlavinGlas.Core\Assets\Wide310x150Logo.png" Square310x310Logo="SlavinGlas.Core\Assets\LargeTile.png" Square71x71Logo="SlavinGlas.Core\Assets\SmallTile.png">
+        </uap:DefaultTile>
+        <uap:SplashScreen Image="SlavinGlas.Core\Assets\SplashScreen.png" />
+      </uap:VisualElements>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="internetClient" />
+  </Capabilities>
+</Package>
